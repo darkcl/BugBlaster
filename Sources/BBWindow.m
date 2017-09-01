@@ -14,16 +14,16 @@
 
 #import <objc/runtime.h>
 
-#import "BBContainerViewController.h"
 #import "BBScreenshotUtility.h"
 
-@interface BBWindow () <BBContainerViewControllerDelegate>
+#import <MessageUI/MessageUI.h>
+
+@interface BBWindow () <MFMailComposeViewControllerDelegate>
 
 @property (nonatomic, weak) UIWindow *keyWindowBeforeModal;
 
 @property (nonatomic, assign) BOOL isShowingModal;
 @property (nonatomic, strong) BBOverlayView *overlayView;
-@property (nonatomic, strong) BBContainerViewController *containerViewController;
 
 @end
 
@@ -85,18 +85,6 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
     [self.rootViewController.view addSubview:self.overlayView];
 }
 
-#pragma mark - Accessors
-
-- (BBContainerViewController *)containerViewController
-{
-    if (!_containerViewController) {
-        _containerViewController = [[BBContainerViewController alloc] init];
-        _containerViewController.delegate = self;
-    }
-    
-    return _containerViewController;
-}
-
 #pragma mark - Touch
 
 - (BOOL)pointInside:(CGPoint)point withEvent:(UIEvent *)event
@@ -117,7 +105,7 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
     return isPointInside;
 }
 
-#pragma mark - EBHOverlayViewControllerDelegate
+#pragma mark - BBOverlayViewControllerDelegate
 
 - (void)overlayViewReceicedTap:(UIView *)overlayView
 {
@@ -128,12 +116,27 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
     }
     
     self.keyWindowBeforeModal = [[UIApplication sharedApplication] keyWindow];
-    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.containerViewController];
-    [self.rootViewController presentViewController:navigationController
-                                          animated:YES
-                                        completion:^{
-                                            self.isShowingModal = YES;
-                                        }];
+    
+    // TODO: Support Custom View Controllers
+    
+    if([MFMailComposeViewController canSendMail]) {
+        MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
+        mailVC.mailComposeDelegate = self;
+        
+        NSInteger idx = 0;
+        
+        for (UIImage *image in [BBScreenshotUtility screenshots]) {
+            [mailVC addAttachmentData:UIImagePNGRepresentation(image) mimeType:@"image/png" fileName:[NSString stringWithFormat:@"image%i", (int)idx]];
+            idx++;
+        }
+        
+        [self.rootViewController presentViewController:mailVC
+                                              animated:YES
+                                            completion:^{
+                                                self.isShowingModal = YES;
+                                            }];
+    }
+    
 }
 
 - (void)overlayViewReceicedDoubleTap:(UIView *)overlayView
@@ -165,16 +168,15 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
                      }];
 }
 
-#pragma mark - EBHContainerViewControllerDelegate
+#pragma mark - MFMailComposeViewControllerDelegate
 
-- (void)containerViewControllerWillDismiss:(BBContainerViewController *)containerViewController
-{
+- (void)mailComposeController:(MFMailComposeViewController *)controller
+          didFinishWithResult:(MFMailComposeResult)result
+                        error:(NSError *)error{
     [self.rootViewController dismissViewControllerAnimated:YES
                                                 completion:^{
-                                                    self.containerViewController = nil;
                                                     self.isShowingModal = NO;
                                                     
-                                                    // Relinquish "keyWindow" status.
                                                     if ([self isKeyWindow]) {
                                                         [self.keyWindowBeforeModal makeKeyAndVisible];
                                                     }

@@ -115,7 +115,7 @@ A Bug Reporter for iOS, inspired by BugHunt
   #  the lib prefix of their name.
   #
 
-  # s.framework  = "SomeFramework"
+  s.framework  = "MessageUI"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"

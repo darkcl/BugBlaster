@@ -7,27 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		03E0B9E2E7BBC510C7512B12A5AEB737 /* ebb_icon-bug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ECF087F23C8DA30C44FCD07E98F634 /* ebb_icon-bug@2x.png */; };
-		0C298AEC0F889F5CEE7F5C8CD6373684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		1DCA29BE35F3E5CA42BB3C89B6155499 /* BBOverlayViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD498969200AA8BCE146F90773291C7 /* BBOverlayViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		220D2DAA546CAEE832C598A5DF9D4443 /* BBScreenshotUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A08284477CF5E7E8A3D6DFF9BF1E618 /* BBScreenshotUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		2E91D6DD039FD5F9468C37A7EB324364 /* BugBlaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 08070E924B9F77FA8AB5BECA530E2431 /* BugBlaster.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		308BC8AA920DE74C88D81B2E11360E28 /* BBScreenshotUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5B2D918B0D0A150BDAB4FA57B448C9 /* BBScreenshotUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3946A9FB9A463C76972B707AB5EC8F25 /* BugBlaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9B7596CB9D77FE588B1DBC4D21E7B9 /* BugBlaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		398EE261F65F8773E95CDCD9143C504F /* BBOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790DC71BFCD5F11611FEC996E8F451A /* BBOverlayView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		582A22497B43E2AD664D441CD65135EB /* BugBlaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26689FE9EE7DAD43A85DFE00D47DD5 /* BugBlaster-dummy.m */; };
-		5F6B334E3701D801C3B498E600F83EAD /* BBContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9869AD1A21E514F213A36DBF4FC30D82 /* BBContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0105A908E76A2D5CFA4B6F0A896DA51D /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */; };
+		0C298AEC0F889F5CEE7F5C8CD6373684 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */; };
+		1EE62752093925FA397E8D761BB3134D /* BBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2AF544BA2639DF67F50EBB3159217 /* BBWindow.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		23D16460C65175477255B5CECFE2EA6D /* BBWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B93EED4294F9430C964AFD3C9FCC215 /* BBWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26B8ACB9E0BEB4D18EC39B3740C2077C /* BugBlaster-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E26689FE9EE7DAD43A85DFE00D47DD5 /* BugBlaster-dummy.m */; };
+		26E5FF5AC4722243BBF60C6B04681708 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */; };
+		273130B768FFFF67C900114645F3F4A0 /* ebb_icon_close_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D61D40039335AD737B33763F4F7BF7C /* ebb_icon_close_circle@2x.png */; };
+		2EADDB966B0ACE3D2ADB1C135FFF058C /* BBOverlayViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 2AD498969200AA8BCE146F90773291C7 /* BBOverlayViewDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		63EB2E7380CA9E34DD7014E33F20B844 /* Pods-BugBlasterExample-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 93F1AC413C9C9250885033B6B6FBBA3D /* Pods-BugBlasterExample-dummy.m */; };
-		784E669C818593EB8CB031D4624E57CB /* ebb_icon-bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 815D14FDD9DAADBE35359179583CBB53 /* ebb_icon-bug.png */; };
-		78E5CA23F6A4C8DE009FD10CB1E514FD /* BBContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A876DE1B74BF96D5D249003E933F060 /* BBContainerViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		88BAF93DAAC2D77500E850AB673B3C5C /* BBWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = CBC2AF544BA2639DF67F50EBB3159217 /* BBWindow.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
-		94BCDE8363B8197CED8E295C40ECE926 /* ebb_icon_close_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3D61D40039335AD737B33763F4F7BF7C /* ebb_icon_close_circle@2x.png */; };
-		94C7B4719B678F8D4C675B7F4570061B /* ebb_icon_close_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C6A1B7D9752C3AEC712C2D96F908E6 /* ebb_icon_close_circle.png */; };
+		71A1884E20FC5C885407379AE115F4BB /* BugBlaster-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1A9B7596CB9D77FE588B1DBC4D21E7B9 /* BugBlaster-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7609AED42483D88BA5B28712A225B6D6 /* BBOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790DC71BFCD5F11611FEC996E8F451A /* BBOverlayView.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 		9F79C7F4C8A77CA58F7EB6E8164FD055 /* Pods-BugBlasterExample-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B02F2448F2CCDACC1A2A7F474917F1CE /* Pods-BugBlasterExample-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A38BBAAC22B6EB6AA0C6E9983F827CBD /* BBWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 2B93EED4294F9430C964AFD3C9FCC215 /* BBWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		B312BEBA064189778807BABD376E54DE /* BugBlaster.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3AE3CC9AB4CAAD4FBD1D2B4DBBA59E /* BugBlaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		BE1BF57811E191D2E0F8292C19F0849B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
-		FD295AA98E6E3ABF4EC4563DB0AEE319 /* BBOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA053DB944F8E8FBF963BB38F4136CC /* BBOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A175B909B61E857895E72F2AC7E37A9E /* BBContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 9869AD1A21E514F213A36DBF4FC30D82 /* BBContainerViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4C3E60091EA3E82054993BA444A7925 /* ebb_icon_close_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 85C6A1B7D9752C3AEC712C2D96F908E6 /* ebb_icon_close_circle.png */; };
+		A8C8CD37B35FB0B9CA02D59DBAAF73B6 /* BBContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4A876DE1B74BF96D5D249003E933F060 /* BBContainerViewController.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		B2BB8BE84B85400B9C7AC858BCF5E0D6 /* BugBlaster.h in Headers */ = {isa = PBXBuildFile; fileRef = EF3AE3CC9AB4CAAD4FBD1D2B4DBBA59E /* BugBlaster.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		BBC07C67DC4D80983EA4EAADB843A211 /* ebb_icon-bug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 24ECF087F23C8DA30C44FCD07E98F634 /* ebb_icon-bug@2x.png */; };
+		BD6366AE6F29ED1054EC9383B3A878F9 /* BugBlaster.m in Sources */ = {isa = PBXBuildFile; fileRef = 08070E924B9F77FA8AB5BECA530E2431 /* BugBlaster.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		C3CB37F03EE0945AE7301D65DE96B7C7 /* ebb_icon-bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 815D14FDD9DAADBE35359179583CBB53 /* ebb_icon-bug.png */; };
+		C5B000FD7D0F24F48387F95322F19341 /* BBOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = EDA053DB944F8E8FBF963BB38F4136CC /* BBOverlayView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA97D7F6C60EA585F6097BF2EA5B9C9D /* BBScreenshotUtility.h in Headers */ = {isa = PBXBuildFile; fileRef = 8F5B2D918B0D0A150BDAB4FA57B448C9 /* BBScreenshotUtility.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F5726796260D78D96F752B81AB1C7B09 /* BBScreenshotUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 9A08284477CF5E7E8A3D6DFF9BF1E618 /* BBScreenshotUtility.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,13 +36,14 @@
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 8999DA72DDC03714DA5C77D3EECDEF84;
+			remoteGlobalIDString = FE4ABFA743C0D416A00806F84DF32DF9;
 			remoteInfo = BugBlaster;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		08070E924B9F77FA8AB5BECA530E2431 /* BugBlaster.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BugBlaster.m; path = Sources/BugBlaster.m; sourceTree = "<group>"; };
+		0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		1790DC71BFCD5F11611FEC996E8F451A /* BBOverlayView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = BBOverlayView.m; path = Sources/BBOverlayView.m; sourceTree = "<group>"; };
 		17E1DF7B905D02C83452810F6B100473 /* Pods_BugBlasterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_BugBlasterExample.framework; path = "Pods-BugBlasterExample.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A9B7596CB9D77FE588B1DBC4D21E7B9 /* BugBlaster-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "BugBlaster-umbrella.h"; sourceTree = "<group>"; };
@@ -58,7 +60,7 @@
 		4E020DDBDE7E88B2608E36BE1144A8F3 /* Pods-BugBlasterExample-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-BugBlasterExample-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5120F9E3590F0A58EDF1CD6494533EB4 /* Pods-BugBlasterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-BugBlasterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		55DF88449FE54842649D4455A9E27890 /* BugBlaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = BugBlaster.framework; path = BugBlaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		701DC3A9AB57CC97C47FB85A10440FE5 /* BugBlaster.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = BugBlaster.xcconfig; sourceTree = "<group>"; };
 		7E26689FE9EE7DAD43A85DFE00D47DD5 /* BugBlaster-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "BugBlaster-dummy.m"; sourceTree = "<group>"; };
 		815D14FDD9DAADBE35359179583CBB53 /* ebb_icon-bug.png */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = image.png; name = "ebb_icon-bug.png"; path = "Resource/ebb_icon-bug.png"; sourceTree = "<group>"; };
@@ -79,11 +81,12 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		008BF58E3B59D4B5DF199EB6E3E5B6A0 /* Frameworks */ = {
+		8BF3499328C98B35BF85F1D05704B72A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE1BF57811E191D2E0F8292C19F0849B /* Foundation.framework in Frameworks */,
+				26E5FF5AC4722243BBF60C6B04681708 /* Foundation.framework in Frameworks */,
+				0105A908E76A2D5CFA4B6F0A896DA51D /* MessageUI.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +118,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5235844FE4661EEE40F3333D962C897F /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		508ED56D749CAFBFA9BA86BB293D10CF /* BugBlaster */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +145,15 @@
 			);
 			name = BugBlaster;
 			path = ../..;
+			sourceTree = "<group>";
+		};
+		5235844FE4661EEE40F3333D962C897F /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				0BD7AD3A550C6DDFEB6FD06963712634 /* Foundation.framework */,
+				5885609E2368591DD048D7D194CC2019 /* MessageUI.framework */,
+			);
+			name = iOS;
 			sourceTree = "<group>";
 		};
 		5AB104ABCDFDEFAC711DE65E5BD9C460 /* Support Files */ = {
@@ -166,7 +186,7 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				856BC9885EC47F354E683198043790C2 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
 				06A814B38F1A733B1DE754F9FE3150F9 /* Products */,
 				0C8D3DA58781B780D2C03EDFB60AD07A /* Targets Support Files */,
 			);
@@ -178,22 +198,6 @@
 				508ED56D749CAFBFA9BA86BB293D10CF /* BugBlaster */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
-			);
-			name = iOS;
 			sourceTree = "<group>";
 		};
 		D6DBF98BCE32E379BEC2C77558A54F5E /* Pods-BugBlasterExample */ = {
@@ -217,17 +221,17 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		D1B71C5BFFD95842DFD0E5DC68EDE6AB /* Headers */ = {
+		6B63EEF7F119769F3DFC68F75D6737D8 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5F6B334E3701D801C3B498E600F83EAD /* BBContainerViewController.h in Headers */,
-				FD295AA98E6E3ABF4EC4563DB0AEE319 /* BBOverlayView.h in Headers */,
-				1DCA29BE35F3E5CA42BB3C89B6155499 /* BBOverlayViewDelegate.h in Headers */,
-				308BC8AA920DE74C88D81B2E11360E28 /* BBScreenshotUtility.h in Headers */,
-				A38BBAAC22B6EB6AA0C6E9983F827CBD /* BBWindow.h in Headers */,
-				3946A9FB9A463C76972B707AB5EC8F25 /* BugBlaster-umbrella.h in Headers */,
-				B312BEBA064189778807BABD376E54DE /* BugBlaster.h in Headers */,
+				A175B909B61E857895E72F2AC7E37A9E /* BBContainerViewController.h in Headers */,
+				C5B000FD7D0F24F48387F95322F19341 /* BBOverlayView.h in Headers */,
+				2EADDB966B0ACE3D2ADB1C135FFF058C /* BBOverlayViewDelegate.h in Headers */,
+				CA97D7F6C60EA585F6097BF2EA5B9C9D /* BBScreenshotUtility.h in Headers */,
+				23D16460C65175477255B5CECFE2EA6D /* BBWindow.h in Headers */,
+				71A1884E20FC5C885407379AE115F4BB /* BugBlaster-umbrella.h in Headers */,
+				B2BB8BE84B85400B9C7AC858BCF5E0D6 /* BugBlaster.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,24 +246,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		8999DA72DDC03714DA5C77D3EECDEF84 /* BugBlaster */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = CF49B68C6BD99DB7159AC75657CF3359 /* Build configuration list for PBXNativeTarget "BugBlaster" */;
-			buildPhases = (
-				7B2B0FDC372D25BC1DB2FE00A1B2BC2A /* Sources */,
-				008BF58E3B59D4B5DF199EB6E3E5B6A0 /* Frameworks */,
-				D1B71C5BFFD95842DFD0E5DC68EDE6AB /* Headers */,
-				D3230A5E3FD8967655C48082F1D425AE /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = BugBlaster;
-			productName = BugBlaster;
-			productReference = 55DF88449FE54842649D4455A9E27890 /* BugBlaster.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		8FD45C638EFCA7A077591859EE9C2F94 /* Pods-BugBlasterExample */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D80437D517CB4ABEC13860731A9BBB94 /* Build configuration list for PBXNativeTarget "Pods-BugBlasterExample" */;
@@ -276,6 +262,24 @@
 			name = "Pods-BugBlasterExample";
 			productName = "Pods-BugBlasterExample";
 			productReference = 17E1DF7B905D02C83452810F6B100473 /* Pods_BugBlasterExample.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FE4ABFA743C0D416A00806F84DF32DF9 /* BugBlaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A3519326B230695882C74DBB79D13943 /* Build configuration list for PBXNativeTarget "BugBlaster" */;
+			buildPhases = (
+				EE2FBB02D0D12F3CAAB9DB1CEA9DC430 /* Sources */,
+				8BF3499328C98B35BF85F1D05704B72A /* Frameworks */,
+				6B63EEF7F119769F3DFC68F75D6737D8 /* Headers */,
+				6A8B09C422555DAC18CD2D6974FE3BE9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BugBlaster;
+			productName = BugBlaster;
+			productReference = 55DF88449FE54842649D4455A9E27890 /* BugBlaster.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -299,45 +303,45 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				8999DA72DDC03714DA5C77D3EECDEF84 /* BugBlaster */,
+				FE4ABFA743C0D416A00806F84DF32DF9 /* BugBlaster */,
 				8FD45C638EFCA7A077591859EE9C2F94 /* Pods-BugBlasterExample */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		D3230A5E3FD8967655C48082F1D425AE /* Resources */ = {
+		6A8B09C422555DAC18CD2D6974FE3BE9 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				784E669C818593EB8CB031D4624E57CB /* ebb_icon-bug.png in Resources */,
-				03E0B9E2E7BBC510C7512B12A5AEB737 /* ebb_icon-bug@2x.png in Resources */,
-				94C7B4719B678F8D4C675B7F4570061B /* ebb_icon_close_circle.png in Resources */,
-				94BCDE8363B8197CED8E295C40ECE926 /* ebb_icon_close_circle@2x.png in Resources */,
+				C3CB37F03EE0945AE7301D65DE96B7C7 /* ebb_icon-bug.png in Resources */,
+				BBC07C67DC4D80983EA4EAADB843A211 /* ebb_icon-bug@2x.png in Resources */,
+				A4C3E60091EA3E82054993BA444A7925 /* ebb_icon_close_circle.png in Resources */,
+				273130B768FFFF67C900114645F3F4A0 /* ebb_icon_close_circle@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B2B0FDC372D25BC1DB2FE00A1B2BC2A /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				78E5CA23F6A4C8DE009FD10CB1E514FD /* BBContainerViewController.m in Sources */,
-				398EE261F65F8773E95CDCD9143C504F /* BBOverlayView.m in Sources */,
-				220D2DAA546CAEE832C598A5DF9D4443 /* BBScreenshotUtility.m in Sources */,
-				88BAF93DAAC2D77500E850AB673B3C5C /* BBWindow.m in Sources */,
-				582A22497B43E2AD664D441CD65135EB /* BugBlaster-dummy.m in Sources */,
-				2E91D6DD039FD5F9468C37A7EB324364 /* BugBlaster.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		8E15D393E92F9FC7EAC7DA94CC0AEFB6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				63EB2E7380CA9E34DD7014E33F20B844 /* Pods-BugBlasterExample-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE2FBB02D0D12F3CAAB9DB1CEA9DC430 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8C8CD37B35FB0B9CA02D59DBAAF73B6 /* BBContainerViewController.m in Sources */,
+				7609AED42483D88BA5B28712A225B6D6 /* BBOverlayView.m in Sources */,
+				F5726796260D78D96F752B81AB1C7B09 /* BBScreenshotUtility.m in Sources */,
+				1EE62752093925FA397E8D761BB3134D /* BBWindow.m in Sources */,
+				26B8ACB9E0BEB4D18EC39B3740C2077C /* BugBlaster-dummy.m in Sources */,
+				BD6366AE6F29ED1054EC9383B3A878F9 /* BugBlaster.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -347,13 +351,13 @@
 		4593E52D128FA3980C59B831C379EB34 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = BugBlaster;
-			target = 8999DA72DDC03714DA5C77D3EECDEF84 /* BugBlaster */;
+			target = FE4ABFA743C0D416A00806F84DF32DF9 /* BugBlaster */;
 			targetProxy = A885FA331CB25B261F1F218F639C9888 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		3A41FE156F6011A950A5EF7EF247F798 /* Debug */ = {
+		24A0C87DF25174DD6A52483DD7B142C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 701DC3A9AB57CC97C47FB85A10440FE5 /* BugBlaster.xcconfig */;
 			buildSettings = {
@@ -423,6 +427,40 @@
 			};
 			name = Debug;
 		};
+		6EAD8B28D520174C28541D81055AD96B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 701DC3A9AB57CC97C47FB85A10440FE5 /* BugBlaster.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/BugBlaster/BugBlaster-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/BugBlaster/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/BugBlaster/BugBlaster.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = BugBlaster;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		707B86CFB21B645E37109F39754D4051 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -464,40 +502,6 @@
 				STRIP_INSTALLED_PRODUCT = NO;
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		B3091646CB059BB115C62A0EA831BD51 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 701DC3A9AB57CC97C47FB85A10440FE5 /* BugBlaster.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/BugBlaster/BugBlaster-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/BugBlaster/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/BugBlaster/BugBlaster.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = BugBlaster;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_VERSION = 3.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
 			};
 			name = Release;
 		};
@@ -598,11 +602,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		CF49B68C6BD99DB7159AC75657CF3359 /* Build configuration list for PBXNativeTarget "BugBlaster" */ = {
+		A3519326B230695882C74DBB79D13943 /* Build configuration list for PBXNativeTarget "BugBlaster" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				3A41FE156F6011A950A5EF7EF247F798 /* Debug */,
-				B3091646CB059BB115C62A0EA831BD51 /* Release */,
+				24A0C87DF25174DD6A52483DD7B142C7 /* Debug */,
+				6EAD8B28D520174C28541D81055AD96B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
