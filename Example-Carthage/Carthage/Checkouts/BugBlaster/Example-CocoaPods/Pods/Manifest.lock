@@ -1,0 +1,16 @@
+PODS:
+  - BugBlaster (0.0.1)
+
+DEPENDENCIES:
+  - BugBlaster (from `../`)
+
+EXTERNAL SOURCES:
+  BugBlaster:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BugBlaster: 7225e294216a01ddc67a50ab402fc2483594f92f
+
+PODFILE CHECKSUM: ff50eb37f3d3a34311e6bca1de21116d0312a632
+
+COCOAPODS: 1.3.1

@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  BugBlasterExample
 //
-//  Created by Yeung Yiu Hung on 2/9/2017.
+//  Created by Yeung Yiu Hung on 1/9/2017.
 //  Copyright © 2017年 Yeung Yiu Hung. All rights reserved.
 //
 

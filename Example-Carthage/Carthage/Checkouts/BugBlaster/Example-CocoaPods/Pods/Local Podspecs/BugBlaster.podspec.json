@@ -1,0 +1,30 @@
+{
+  "name": "BugBlaster",
+  "version": "0.0.1",
+  "summary": "A Bug Reporter for iOS",
+  "description": "A Bug Reporter for iOS, inspired by BugHunt",
+  "homepage": "https://github.com/darkcl/BugBlaster",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yeung Yiu Hung": "email@address.com"
+  },
+  "source": {
+    "git": "https://github.com/darkcl/BugBlaster.git",
+    "commit": "77d98978a360477d7234dc1f7a8e982109ccaa74"
+  },
+  "source_files": [
+    "Sources",
+    "Sources/**/*.{h,m}"
+  ],
+  "resources": "Resource/*.png",
+  "frameworks": "MessageUI",
+  "platforms": {
+    "osx": null,
+    "ios": null,
+    "tvos": null,
+    "watchos": null
+  }
+}
