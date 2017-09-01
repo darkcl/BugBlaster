@@ -14,6 +14,17 @@ FOUNDATION_EXPORT double BugBlasterVersionNumber;
 //! Project version string for BugBlaster.
 FOUNDATION_EXPORT const unsigned char BugBlasterVersionString[];
 
-// In this header, you should import all the public headers of your framework using statements like #import <BugBlaster/PublicHeader.h>
+@interface BugBlaster : NSObject
 
+/**
+ *  Shows the Bug Blaster window immediately. The window level
+ *  will default to UIWindowLevelStatusBar - 1.
+ */
++ (void)showBugBlaster;
 
+/**
+ *  Hides the Bug Blaster window.
+ */
++ (void)hideBugBlaster;
+
+@end
