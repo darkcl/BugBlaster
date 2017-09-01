@@ -18,14 +18,14 @@
 
 + (instancetype)sharedInstance
 {
-    static BBScreenshotUtility *screenshotUtil = nil;
+    static BBScreenshotUtility *sharedInstance = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        screenshotUtil = [[BBScreenshotUtility alloc] init];
-        screenshotUtil.screenshots = [NSMutableArray array];
+        sharedInstance = [[BBScreenshotUtility alloc] init];
+        sharedInstance.screenshots = [NSMutableArray array];
     });
     
-    return screenshotUtil;
+    return sharedInstance;
 }
 
 + (void)captureScreenshotOfMainWindow
@@ -42,7 +42,7 @@
     
     for (UIWindow *window in [UIApplication sharedApplication].windows) {
         
-        // Don't draw the Bug Hunt overlay
+        // Don't draw the Bug Blaster overlay
         if ([window isKindOfClass:[BBWindow class]]) {
             continue;
         }

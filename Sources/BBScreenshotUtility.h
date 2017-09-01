@@ -17,7 +17,7 @@
 
 /**
  *  Returns an array of all the screenshots taken since
- *  since the last time Bug Hunt was shown.
+ *  since the last time Bug Blaster was shown.
  *
  *  @return NSArray of UIImages.
  */

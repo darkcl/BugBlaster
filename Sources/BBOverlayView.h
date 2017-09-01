@@ -1,5 +1,5 @@
 //
-//  BBWindow.h
+//  BBOverlayView.h
 //  BugBlaster
 //
 //  Created by Yeung Yiu Hung on 1/9/2017.
@@ -10,6 +10,8 @@
 
 @protocol BBOverlayViewDelegate;
 
-@interface BBWindow : UIWindow <BBOverlayViewDelegate>
+@interface BBOverlayView : UIView
+
+@property (nonatomic, weak) id<BBOverlayViewDelegate> delegate;
 
 @end
