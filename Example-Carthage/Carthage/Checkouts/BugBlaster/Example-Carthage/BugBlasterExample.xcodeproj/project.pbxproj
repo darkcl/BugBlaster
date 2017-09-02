@@ -12,6 +12,7 @@
 		745997D21F59BD90001D93BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745997D01F59BD90001D93BE /* Main.storyboard */; };
 		745997D41F59BD90001D93BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745997D31F59BD90001D93BE /* Assets.xcassets */; };
 		745997D71F59BD90001D93BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745997D51F59BD90001D93BE /* LaunchScreen.storyboard */; };
+		745997E21F59BF4F001D93BE /* BugBlaster.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745997E11F59BF4F001D93BE /* BugBlaster.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		745997D31F59BD90001D93BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		745997D61F59BD90001D93BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		745997D81F59BD90001D93BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745997E11F59BF4F001D93BE /* BugBlaster.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = BugBlaster.framework; path = Carthage/Build/iOS/BugBlaster.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +31,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745997E21F59BF4F001D93BE /* BugBlaster.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +43,7 @@
 			children = (
 				745997CB1F59BD90001D93BE /* BugBlasterExample */,
 				745997CA1F59BD90001D93BE /* Products */,
+				745997E01F59BF4F001D93BE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -64,6 +68,14 @@
 			path = BugBlasterExample;
 			sourceTree = "<group>";
 		};
+		745997E01F59BF4F001D93BE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				745997E11F59BF4F001D93BE /* BugBlaster.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,6 +86,7 @@
 				745997C51F59BD90001D93BE /* Sources */,
 				745997C61F59BD90001D93BE /* Frameworks */,
 				745997C71F59BD90001D93BE /* Resources */,
+				745997DF1F59BF13001D93BE /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -131,6 +144,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		745997DF1F59BF13001D93BE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/BugBlaster.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		745997C51F59BD90001D93BE /* Sources */ = {
@@ -264,6 +294,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EWTFSD7VTD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BugBlasterExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkcl.BugBlasterExample;
@@ -277,6 +311,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = EWTFSD7VTD;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = BugBlasterExample/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.darkcl.BugBlasterExample;
@@ -304,6 +342,7 @@
 				745997DD1F59BD90001D93BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

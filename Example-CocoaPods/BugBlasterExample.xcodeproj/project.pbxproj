@@ -13,6 +13,7 @@
 		745997B11F59A283001D93BE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745997AF1F59A283001D93BE /* Main.storyboard */; };
 		745997B31F59A283001D93BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 745997B21F59A283001D93BE /* Assets.xcassets */; };
 		745997B61F59A283001D93BE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 745997B41F59A283001D93BE /* LaunchScreen.storyboard */; };
+		745997E41F59C84F001D93BE /* BugReportViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 745997E31F59C84F001D93BE /* BugReportViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		745997B21F59A283001D93BE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		745997B51F59A283001D93BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		745997B71F59A283001D93BE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		745997E31F59C84F001D93BE /* BugReportViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BugReportViewController.swift; sourceTree = "<group>"; };
 		999455088CCB3E8F8E1E3B97 /* Pods-BugBlasterExample.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BugBlasterExample.debug.xcconfig"; path = "Pods/Target Support Files/Pods-BugBlasterExample/Pods-BugBlasterExample.debug.xcconfig"; sourceTree = "<group>"; };
 		AC752BDDF483D9BB7ED3770C /* Pods_BugBlasterExample.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BugBlasterExample.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -75,6 +77,7 @@
 				745997B21F59A283001D93BE /* Assets.xcassets */,
 				745997B41F59A283001D93BE /* LaunchScreen.storyboard */,
 				745997B71F59A283001D93BE /* Info.plist */,
+				745997E31F59C84F001D93BE /* BugReportViewController.swift */,
 			);
 			path = BugBlasterExample;
 			sourceTree = "<group>";
@@ -168,10 +171,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-BugBlasterExample/Pods-BugBlasterExample-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/BugBlaster/BugBlaster.framework",
+				"${BUILT_PRODUCTS_DIR}/PainterKit/PainterKit.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BugBlaster.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PainterKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -218,6 +225,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				745997E41F59C84F001D93BE /* BugReportViewController.swift in Sources */,
 				745997AE1F59A283001D93BE /* ViewController.swift in Sources */,
 				745997AC1F59A283001D93BE /* AppDelegate.swift in Sources */,
 			);
@@ -387,6 +395,7 @@
 				745997BC1F59A283001D93BE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

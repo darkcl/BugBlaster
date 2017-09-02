@@ -6,5 +6,9 @@ target 'BugBlasterExample' do
   use_frameworks!
 
   pod 'BugBlaster', :path=>'../'
-
+  
+  pod 'SnapKit'
+  
+  pod 'PainterKit'
+  
 end

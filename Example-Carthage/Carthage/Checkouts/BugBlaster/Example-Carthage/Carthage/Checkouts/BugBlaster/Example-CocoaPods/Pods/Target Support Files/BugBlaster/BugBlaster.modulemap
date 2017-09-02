@@ -1,0 +1,6 @@
+framework module BugBlaster {
+  umbrella header "BugBlaster-umbrella.h"
+
+  export *
+  module * { export * }
+}

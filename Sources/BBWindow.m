@@ -10,8 +10,6 @@
 
 #import "BBOverlayView.h"
 
-#import "BBOverlayViewDelegate.h"
-
 #import <objc/runtime.h>
 
 #import "BBScreenshotUtility.h"
@@ -24,6 +22,8 @@
 
 @property (nonatomic, assign) BOOL isShowingModal;
 @property (nonatomic, strong) BBOverlayView *overlayView;
+
+@property (nonatomic, copy) BugBlasterConfigurationBlock configurationBlock;
 
 @end
 
@@ -60,6 +60,16 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
     
     return self;
 }
+
+- (instancetype)initWithConfiguration:(BugBlasterConfigurationBlock)configurationBlock{
+    CGRect frame = [[UIScreen mainScreen] bounds];
+    self = [self initWithFrame:frame];
+    
+    self.configurationBlock = configurationBlock;
+    
+    return self;
+}
+
 
 - (void)initialize_
 {

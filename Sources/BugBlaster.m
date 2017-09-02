@@ -49,18 +49,17 @@
 
 + (void)showBugBlaster
 {
-    [BugBlaster showBugBlasterAtLevel:UIWindowLevelStatusBar - 1];
+    [BugBlaster showBugBlasterWithConfiguration:nil];
 }
 
-+ (void)showBugBlasterAtLevel:(NSInteger)windowLevel
-{
++ (void)showBugBlasterWithConfiguration:(BugBlasterConfigurationBlock)configurationBlock{
     BugBlaster* bugBlaster = [BugBlaster sharedInstance];
     
     if (bugBlaster.bugBlasterWindow == nil) {
-        bugBlaster.bugBlasterWindow = [[BBWindow alloc] init];
+        bugBlaster.bugBlasterWindow = [[BBWindow alloc] initWithConfiguration:configurationBlock];
     }
     
-    bugBlaster.bugBlasterWindow.windowLevel = windowLevel;
+    bugBlaster.bugBlasterWindow.windowLevel = UIWindowLevelStatusBar - 1;
     [bugBlaster.bugBlasterWindow makeKeyAndVisible];
     
     // We just want bugHunt to be visible, not key.
@@ -69,20 +68,13 @@
 
 + (void)hideBugBlaster
 {
-    [BugBlaster hideBugBlasterAndDeallocate:YES];
-}
-
-+ (void)hideBugBlasterAndDeallocate:(BOOL)shouldDeallocate
-{
     [BBScreenshotUtility clearScreenshots];
     
     BugBlaster* bugBlaster = [BugBlaster sharedInstance];
     bugBlaster.bugBlasterWindow.hidden = YES;
     [bugBlaster.mainAppWindow makeKeyAndVisible];
     
-    if (shouldDeallocate) {
-        bugBlaster.bugBlasterWindow = nil;
-    }
+    bugBlaster.bugBlasterWindow = nil;
 }
 
 @end

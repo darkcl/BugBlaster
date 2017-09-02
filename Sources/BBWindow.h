@@ -8,8 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@protocol BBOverlayViewDelegate;
+#import "BugBlaster.h"
+
+#import "BBOverlayViewDelegate.h"
 
 @interface BBWindow : UIWindow <BBOverlayViewDelegate>
+
+- (instancetype _Nonnull )initWithConfiguration:(nullable BugBlasterConfigurationBlock)configurationBlock;
 
 @end

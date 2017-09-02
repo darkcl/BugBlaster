@@ -23,8 +23,6 @@
 		74864A621F599DC90090648D /* BBOverlayViewDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 74864A611F599DC90090648D /* BBOverlayViewDelegate.h */; };
 		74864A651F599E440090648D /* BBOverlayView.h in Headers */ = {isa = PBXBuildFile; fileRef = 74864A631F599E440090648D /* BBOverlayView.h */; };
 		74864A661F599E440090648D /* BBOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74864A641F599E440090648D /* BBOverlayView.m */; };
-		74864A691F599EFA0090648D /* BBContainerViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 74864A671F599EFA0090648D /* BBContainerViewController.h */; };
-		74864A6A1F599EFA0090648D /* BBContainerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74864A681F599EFA0090648D /* BBContainerViewController.m */; };
 		74864A711F59A0FC0090648D /* ebb_icon-bug.png in Resources */ = {isa = PBXBuildFile; fileRef = 74864A6D1F59A0FC0090648D /* ebb_icon-bug.png */; };
 		74864A721F59A0FC0090648D /* ebb_icon-bug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74864A6E1F59A0FC0090648D /* ebb_icon-bug@2x.png */; };
 		74864A731F59A0FC0090648D /* ebb_icon_close_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 74864A6F1F59A0FC0090648D /* ebb_icon_close_circle.png */; };
@@ -60,8 +58,6 @@
 		74864A611F599DC90090648D /* BBOverlayViewDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOverlayViewDelegate.h; sourceTree = "<group>"; };
 		74864A631F599E440090648D /* BBOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBOverlayView.h; sourceTree = "<group>"; };
 		74864A641F599E440090648D /* BBOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBOverlayView.m; sourceTree = "<group>"; };
-		74864A671F599EFA0090648D /* BBContainerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBContainerViewController.h; sourceTree = "<group>"; };
-		74864A681F599EFA0090648D /* BBContainerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBContainerViewController.m; sourceTree = "<group>"; };
 		74864A6D1F59A0FC0090648D /* ebb_icon-bug.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ebb_icon-bug.png"; sourceTree = "<group>"; };
 		74864A6E1F59A0FC0090648D /* ebb_icon-bug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ebb_icon-bug@2x.png"; sourceTree = "<group>"; };
 		74864A6F1F59A0FC0090648D /* ebb_icon_close_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ebb_icon_close_circle.png; sourceTree = "<group>"; };
@@ -161,8 +157,6 @@
 			isa = PBXGroup;
 			children = (
 				74864A6B1F599F020090648D /* Overlay */,
-				74864A671F599EFA0090648D /* BBContainerViewController.h */,
-				74864A681F599EFA0090648D /* BBContainerViewController.m */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -216,7 +210,6 @@
 				74864A5B1F599AF70090648D /* BBWindow.h in Headers */,
 				74864A621F599DC90090648D /* BBOverlayViewDelegate.h in Headers */,
 				74864A5F1F599B270090648D /* BBScreenshotUtility.h in Headers */,
-				74864A691F599EFA0090648D /* BBContainerViewController.h in Headers */,
 				74864A651F599E440090648D /* BBOverlayView.h in Headers */,
 				74864A571F599A230090648D /* BugBlaster.h in Headers */,
 			);
@@ -331,7 +324,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74864A6A1F599EFA0090648D /* BBContainerViewController.m in Sources */,
 				74864A581F599A230090648D /* BugBlaster.m in Sources */,
 				74864A5C1F599AF70090648D /* BBWindow.m in Sources */,
 				74864A601F599B270090648D /* BBScreenshotUtility.m in Sources */,
