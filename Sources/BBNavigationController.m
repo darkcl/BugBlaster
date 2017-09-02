@@ -22,8 +22,8 @@
 - (void)viewWillDisappear:(BOOL)animated{
     [super viewWillDisappear:animated];
     
-    if(self.delegate != nil && [self.delegate respondsToSelector:@selector(navigationControllerWillDismiss:)]) {
-        [self.delegate navigationControllerWillDismiss:self];
+    if(self.bugBlasterDelegate != nil && [self.bugBlasterDelegate respondsToSelector:@selector(navigationControllerWillDismiss:)]) {
+        [self.bugBlasterDelegate navigationControllerWillDismiss:self];
     }
 }
 

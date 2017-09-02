@@ -132,7 +132,7 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
     if(self.configurationBlock != nil) {
         UIViewController *customViewController = self.configurationBlock([BBScreenshotUtility screenshots]);
         BBNavigationController *navVC = [[BBNavigationController alloc] initWithRootViewController:customViewController];
-        navVC.delegate = self;
+        navVC.bugBlasterDelegate = self;
         [self.rootViewController presentViewController:navVC
                                               animated:YES
                                             completion:^{

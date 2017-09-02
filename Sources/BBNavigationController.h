@@ -20,6 +20,6 @@
 
 @interface BBNavigationController : UINavigationController
 
-@property (nonatomic, weak) id<BBNavigationControllerDelegate> delegate;
+@property (nonatomic, weak) id<BBNavigationControllerDelegate> bugBlasterDelegate;
 
 @end
