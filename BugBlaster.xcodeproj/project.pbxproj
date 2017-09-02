@@ -10,6 +10,8 @@
 		745997BF1F59BAF0001D93BE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745997BE1F59BAF0001D93BE /* MessageUI.framework */; };
 		745997E71F5A547C001D93BE /* BBNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 745997E51F5A547C001D93BE /* BBNavigationController.h */; };
 		745997E81F5A547C001D93BE /* BBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745997E61F5A547C001D93BE /* BBNavigationController.m */; };
+		745997F01F5AEBC0001D93BE /* BBReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 745997EE1F5AEBC0001D93BE /* BBReport.h */; };
+		745997F11F5AEBC0001D93BE /* BBReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 745997EF1F5AEBC0001D93BE /* BBReport.m */; };
 		74864A161F597F610090648D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74864A101F597F2E0090648D /* Info.plist */; };
 		74864A1A1F5980450090648D /* BugBlaster.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 74864A191F5980450090648D /* BugBlaster.podspec */; };
 		74864A1C1F5980740090648D /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 74864A1B1F5980740090648D /* README.md */; };
@@ -45,6 +47,8 @@
 		745997BE1F59BAF0001D93BE /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/MessageUI.framework; sourceTree = DEVELOPER_DIR; };
 		745997E51F5A547C001D93BE /* BBNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBNavigationController.h; sourceTree = "<group>"; };
 		745997E61F5A547C001D93BE /* BBNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBNavigationController.m; sourceTree = "<group>"; };
+		745997EE1F5AEBC0001D93BE /* BBReport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBReport.h; sourceTree = "<group>"; };
+		745997EF1F5AEBC0001D93BE /* BBReport.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBReport.m; sourceTree = "<group>"; };
 		74864A0C1F597F2D0090648D /* BugBlaster.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = BugBlaster.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74864A101F597F2E0090648D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		74864A191F5980450090648D /* BugBlaster.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = BugBlaster.podspec; sourceTree = "<group>"; };
@@ -53,8 +57,8 @@
 		74864A3B1F5981FD0090648D /* BugBlasterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BugBlasterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74864A3D1F5981FD0090648D /* BugBlasterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BugBlasterTests.swift; sourceTree = "<group>"; };
 		74864A3F1F5981FD0090648D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		74864A551F599A230090648D /* BugBlaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BugBlaster.h; sourceTree = "<group>"; };
-		74864A561F599A230090648D /* BugBlaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BugBlaster.m; sourceTree = "<group>"; };
+		74864A551F599A230090648D /* BugBlaster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = BugBlaster.h; path = Sources/BugBlaster.h; sourceTree = "<group>"; };
+		74864A561F599A230090648D /* BugBlaster.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = BugBlaster.m; path = Sources/BugBlaster.m; sourceTree = "<group>"; };
 		74864A591F599AF70090648D /* BBWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBWindow.h; sourceTree = "<group>"; };
 		74864A5A1F599AF70090648D /* BBWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBWindow.m; sourceTree = "<group>"; };
 		74864A5D1F599B270090648D /* BBScreenshotUtility.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBScreenshotUtility.h; sourceTree = "<group>"; };
@@ -96,12 +100,23 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		745997E91F5AD20A001D93BE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				745997EE1F5AEBC0001D93BE /* BBReport.h */,
+				745997EF1F5AEBC0001D93BE /* BBReport.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		748649D51F597C850090648D = {
 			isa = PBXGroup;
 			children = (
 				74864A6C1F59A0FC0090648D /* Resource */,
 				74864A181F597FD10090648D /* Metadata */,
 				74864A151F597F470090648D /* Sources */,
+				74864A551F599A230090648D /* BugBlaster.h */,
+				74864A561F599A230090648D /* BugBlaster.m */,
 				74864A0E1F597F2E0090648D /* BugBlaster */,
 				74864A3C1F5981FD0090648D /* BugBlasterTests */,
 				74864A0D1F597F2D0090648D /* Products */,
@@ -129,8 +144,7 @@
 		74864A151F597F470090648D /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				74864A551F599A230090648D /* BugBlaster.h */,
-				74864A561F599A230090648D /* BugBlaster.m */,
+				745997E91F5AD20A001D93BE /* Models */,
 				74864A4E1F5993600090648D /* Protocol */,
 				74864A4B1F598A2D0090648D /* Utilities */,
 				74864A4A1F598A240090648D /* Views */,
@@ -215,6 +229,7 @@
 			files = (
 				74864A5B1F599AF70090648D /* BBWindow.h in Headers */,
 				74864A621F599DC90090648D /* BBOverlayViewDelegate.h in Headers */,
+				745997F01F5AEBC0001D93BE /* BBReport.h in Headers */,
 				74864A5F1F599B270090648D /* BBScreenshotUtility.h in Headers */,
 				74864A651F599E440090648D /* BBOverlayView.h in Headers */,
 				745997E71F5A547C001D93BE /* BBNavigationController.h in Headers */,
@@ -334,6 +349,7 @@
 				74864A581F599A230090648D /* BugBlaster.m in Sources */,
 				74864A5C1F599AF70090648D /* BBWindow.m in Sources */,
 				74864A601F599B270090648D /* BBScreenshotUtility.m in Sources */,
+				745997F11F5AEBC0001D93BE /* BBReport.m in Sources */,
 				74864A661F599E440090648D /* BBOverlayView.m in Sources */,
 				74864A1C1F5980740090648D /* README.md in Sources */,
 				745997E81F5A547C001D93BE /* BBNavigationController.m in Sources */,

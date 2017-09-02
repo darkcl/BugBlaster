@@ -1,4 +1,4 @@
 BugBlaster
 ===
 
-Inspired By etsy/BugHunt-iOS, added Zeplin integretion
+Inspired By BugHunt-iOS
