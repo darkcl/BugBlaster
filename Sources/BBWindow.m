@@ -16,7 +16,9 @@
 
 #import <MessageUI/MessageUI.h>
 
-@interface BBWindow () <MFMailComposeViewControllerDelegate>
+#import "BBNavigationController.h"
+
+@interface BBWindow () <MFMailComposeViewControllerDelegate, BBNavigationControllerDelegate>
 
 @property (nonatomic, weak) UIWindow *keyWindowBeforeModal;
 
@@ -127,25 +129,36 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
     
     self.keyWindowBeforeModal = [[UIApplication sharedApplication] keyWindow];
     
-    // TODO: Support Custom View Controllers
-    
-    if([MFMailComposeViewController canSendMail]) {
-        MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
-        mailVC.mailComposeDelegate = self;
-        
-        NSInteger idx = 0;
-        
-        for (UIImage *image in [BBScreenshotUtility screenshots]) {
-            [mailVC addAttachmentData:UIImagePNGRepresentation(image) mimeType:@"image/png" fileName:[NSString stringWithFormat:@"image%i", (int)idx]];
-            idx++;
-        }
-        
-        [self.rootViewController presentViewController:mailVC
+    if(self.configurationBlock != nil) {
+        UIViewController *customViewController = self.configurationBlock([BBScreenshotUtility screenshots]);
+        BBNavigationController *navVC = [[BBNavigationController alloc] initWithRootViewController:customViewController];
+        navVC.delegate = self;
+        [self.rootViewController presentViewController:navVC
                                               animated:YES
                                             completion:^{
                                                 self.isShowingModal = YES;
                                             }];
+    }else{
+        if([MFMailComposeViewController canSendMail]) {
+            MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
+            mailVC.mailComposeDelegate = self;
+            
+            NSInteger idx = 0;
+            
+            for (UIImage *image in [BBScreenshotUtility screenshots]) {
+                [mailVC addAttachmentData:UIImagePNGRepresentation(image) mimeType:@"image/png" fileName:[NSString stringWithFormat:@"image%i", (int)idx]];
+                idx++;
+            }
+            
+            [self.rootViewController presentViewController:mailVC
+                                                  animated:YES
+                                                completion:^{
+                                                    self.isShowingModal = YES;
+                                                }];
+        }
     }
+    
+    
     
 }
 
@@ -193,6 +206,18 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
                                                     
                                                     [BBScreenshotUtility clearScreenshots];
                                                 }];
+}
+
+#pragma mark - BBNavigationControllerDelegate
+
+- (void)navigationControllerWillDismiss:(BBNavigationController *)controller{
+    self.isShowingModal = NO;
+    
+    if ([self isKeyWindow]) {
+        [self.keyWindowBeforeModal makeKeyAndVisible];
+    }
+    
+    [BBScreenshotUtility clearScreenshots];
 }
 
 @end

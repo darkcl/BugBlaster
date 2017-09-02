@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "BBNavigationController.h"
 #import "BBOverlayView.h"
 #import "BBOverlayViewDelegate.h"
 #import "BBScreenshotUtility.h"
