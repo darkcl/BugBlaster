@@ -24,4 +24,10 @@ typedef UIViewController * _Nonnull(^BugBlasterConfigurationBlock)(NSArray<UIIma
 
 + (void)hideBugBlaster;
 
+#pragma mark - Settings
+
++ (void)setReportEmail:(nonnull NSString *)email;
+
++ (nullable NSString *)reportEmail;
+
 @end

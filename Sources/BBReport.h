@@ -6,7 +6,7 @@
 //
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface BBReport : NSObject
 
@@ -14,6 +14,16 @@
 
 @property (nonatomic, strong) NSString *deviceModel;
 
-@property (nonatomic, strong) NSString *currentScreenName;
+@property (nonatomic, strong) NSString *appVersionNumber;
+
+@property (nonatomic, strong) NSString *appBuildNumber;
+
+@property (nonatomic, strong) NSArray <UIImage *> *images;
+
+@property BOOL isNetworkReachable;
+
+@property BOOL isPushEnable;
+
+@property BOOL isGPSEnable;
 
 @end

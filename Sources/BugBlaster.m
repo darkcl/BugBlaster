@@ -15,6 +15,8 @@
 @property (nonatomic, weak) UIWindow *mainAppWindow;
 @property (nonatomic, strong) BBWindow *bugBlasterWindow;
 
+@property (nonatomic, strong) NSString *email;
+
 @end
 
 @implementation BugBlaster
@@ -75,6 +77,16 @@
     [bugBlaster.mainAppWindow makeKeyAndVisible];
     
     bugBlaster.bugBlasterWindow = nil;
+}
+
++ (void)setReportEmail:(nonnull NSString *)email{
+    BugBlaster* bugBlaster = [BugBlaster sharedInstance];
+    bugBlaster.email = email;
+}
+
++ (NSString *)reportEmail{
+    BugBlaster* bugBlaster = [BugBlaster sharedInstance];
+    return bugBlaster.email;
 }
 
 @end

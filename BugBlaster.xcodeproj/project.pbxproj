@@ -10,7 +10,7 @@
 		745997BF1F59BAF0001D93BE /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 745997BE1F59BAF0001D93BE /* MessageUI.framework */; };
 		745997E71F5A547C001D93BE /* BBNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 745997E51F5A547C001D93BE /* BBNavigationController.h */; };
 		745997E81F5A547C001D93BE /* BBNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 745997E61F5A547C001D93BE /* BBNavigationController.m */; };
-		745997F01F5AEBC0001D93BE /* BBReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 745997EE1F5AEBC0001D93BE /* BBReport.h */; };
+		745997F01F5AEBC0001D93BE /* BBReport.h in Headers */ = {isa = PBXBuildFile; fileRef = 745997EE1F5AEBC0001D93BE /* BBReport.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		745997F11F5AEBC0001D93BE /* BBReport.m in Sources */ = {isa = PBXBuildFile; fileRef = 745997EF1F5AEBC0001D93BE /* BBReport.m */; };
 		74864A161F597F610090648D /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 74864A101F597F2E0090648D /* Info.plist */; };
 		74864A1A1F5980450090648D /* BugBlaster.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 74864A191F5980450090648D /* BugBlaster.podspec */; };
@@ -31,6 +31,8 @@
 		74864A721F59A0FC0090648D /* ebb_icon-bug@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74864A6E1F59A0FC0090648D /* ebb_icon-bug@2x.png */; };
 		74864A731F59A0FC0090648D /* ebb_icon_close_circle.png in Resources */ = {isa = PBXBuildFile; fileRef = 74864A6F1F59A0FC0090648D /* ebb_icon_close_circle.png */; };
 		74864A741F59A0FC0090648D /* ebb_icon_close_circle@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 74864A701F59A0FC0090648D /* ebb_icon_close_circle@2x.png */; };
+		DDCAE27C1F5E4ACC0069900C /* BBConfiguration.h in Headers */ = {isa = PBXBuildFile; fileRef = DDCAE27A1F5E4ACC0069900C /* BBConfiguration.h */; };
+		DDCAE27D1F5E4ACC0069900C /* BBConfiguration.m in Sources */ = {isa = PBXBuildFile; fileRef = DDCAE27B1F5E4ACC0069900C /* BBConfiguration.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -70,6 +72,8 @@
 		74864A6E1F59A0FC0090648D /* ebb_icon-bug@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ebb_icon-bug@2x.png"; sourceTree = "<group>"; };
 		74864A6F1F59A0FC0090648D /* ebb_icon_close_circle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ebb_icon_close_circle.png; sourceTree = "<group>"; };
 		74864A701F59A0FC0090648D /* ebb_icon_close_circle@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ebb_icon_close_circle@2x.png"; sourceTree = "<group>"; };
+		DDCAE27A1F5E4ACC0069900C /* BBConfiguration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BBConfiguration.h; sourceTree = "<group>"; };
+		DDCAE27B1F5E4ACC0069900C /* BBConfiguration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBConfiguration.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +109,8 @@
 			children = (
 				745997EE1F5AEBC0001D93BE /* BBReport.h */,
 				745997EF1F5AEBC0001D93BE /* BBReport.m */,
+				DDCAE27A1F5E4ACC0069900C /* BBConfiguration.h */,
+				DDCAE27B1F5E4ACC0069900C /* BBConfiguration.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -230,6 +236,7 @@
 				74864A5B1F599AF70090648D /* BBWindow.h in Headers */,
 				74864A621F599DC90090648D /* BBOverlayViewDelegate.h in Headers */,
 				745997F01F5AEBC0001D93BE /* BBReport.h in Headers */,
+				DDCAE27C1F5E4ACC0069900C /* BBConfiguration.h in Headers */,
 				74864A5F1F599B270090648D /* BBScreenshotUtility.h in Headers */,
 				74864A651F599E440090648D /* BBOverlayView.h in Headers */,
 				745997E71F5A547C001D93BE /* BBNavigationController.h in Headers */,
@@ -288,7 +295,6 @@
 				TargetAttributes = {
 					74864A0B1F597F2D0090648D = {
 						CreatedOnToolsVersion = 8.3.1;
-						DevelopmentTeam = EWTFSD7VTD;
 						ProvisioningStyle = Automatic;
 					};
 					74864A3A1F5981FD0090648D = {
@@ -346,6 +352,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DDCAE27D1F5E4ACC0069900C /* BBConfiguration.m in Sources */,
 				74864A581F599A230090648D /* BugBlaster.m in Sources */,
 				74864A5C1F599AF70090648D /* BBWindow.m in Sources */,
 				74864A601F599B270090648D /* BBScreenshotUtility.m in Sources */,
@@ -415,7 +422,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = EWTFSD7VTD;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -482,7 +489,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = EWTFSD7VTD;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
