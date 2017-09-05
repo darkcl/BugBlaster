@@ -18,6 +18,8 @@
 
 #import "BBNavigationController.h"
 
+#import "BugBlaster.h"
+
 @interface BBWindow () <MFMailComposeViewControllerDelegate, BBNavigationControllerDelegate>
 
 @property (nonatomic, weak) UIWindow *keyWindowBeforeModal;
@@ -142,6 +144,10 @@ UIWindow * __swizzled_statusBarControllingWindow(id self, SEL _cmd)
         if([MFMailComposeViewController canSendMail]) {
             MFMailComposeViewController *mailVC = [[MFMailComposeViewController alloc] init];
             mailVC.mailComposeDelegate = self;
+            
+            if ([BugBlaster reportEmail] != nil) {
+                [mailVC setToRecipients:@[[BugBlaster reportEmail]]];
+            }
             
             NSInteger idx = 0;
             
